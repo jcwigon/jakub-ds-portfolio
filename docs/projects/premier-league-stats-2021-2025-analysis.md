@@ -1,4 +1,4 @@
-# Premier League Statistics (2021–2025)
+# Premier League Statistics Analysis (2021–2025)
 
 *Date of creation: 2024-07-02*
 

@@ -6,5 +6,5 @@ theme:
 nav:
   - Home: index.md
   - Projects:
-      - "Premier League Stats": projects/premier-league-stats.md
+      - "Premier League Statistics Analysis (2021–2025)": projects/premier-league-stats-2021-2025-analysis.md
       - "Second Project": projects/second-project.md
