@@ -17,6 +17,7 @@ This project presents a comprehensive analysis of data from the English Premier 
 Through this project, I demonstrate in practice how to build custom Python modules, define classes, use NoSQL databases, acquire data from open sources, as well as analyze and search a MongoDB database, and present results in a clear visual form.
 
 Additionally, as a football enthusiast, I have prepared interesting analyses that answer questions such as:
+
 - Do referees favor home teams?
 - Does home advantage really matter?
 - Which teams committed the most fouls in particular seasons?
