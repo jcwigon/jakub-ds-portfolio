@@ -1,0 +1,10 @@
+site_name: Jakub Cwigon Data Science Portfolio
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Projects:
+      - "Premier League Stats": projects/premier-league-stats.md
+      - "Second Project": projects/second-project.md
