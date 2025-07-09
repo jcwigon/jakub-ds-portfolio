@@ -24,3 +24,14 @@ Additionally, as a football enthusiast, I have prepared interesting analyses tha
 - Is the Premier League becoming more attacking-oriented each year?
 - Based on available data, I have also calculated a simplified, popular in modern football xG (Expected Goals) metric.
 
+## Skills
+
+Python  
+Pandas  
+Matplotlib  
+MongoDB  
+MkDocs  
+Git  
+Visual Studio Code  
+Open Data  
+
