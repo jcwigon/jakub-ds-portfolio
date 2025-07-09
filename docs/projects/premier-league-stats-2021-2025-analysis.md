@@ -56,11 +56,11 @@ All modules are well documented, and the code follows a modular structure for cl
 
 ![Project workflow](imgs/pl_workflow.png)
 
-## Main analysis script
+## Preview of Jupyter Notebook
 
-You can download the complete code and Jupyter notebook for this project here:
+Below is a sample screenshot from the Jupyter Notebook where the analysis was performed:
 
-[![Download project (ZIP)](https://img.shields.io/badge/Download%20project-blue?style=for-the-badge&logo=github)](files/premier-league-analysis.zip)
+![Jupyter Notebook Preview](imgs/Notebookss.png)
 
 ## Analysis Visualizations
 
@@ -281,3 +281,11 @@ You can download the complete code and Jupyter notebook for this project here:
 - For most teams, the highest xG was recorded in the 2023/24 season, suggesting a particularly offensive year in the Premier League.
 
 - The following 2024/25 season saw a slight decline in xG for nearly all top 10 teams, possibly reflecting more defensive tactics or improved defensive performances league-wide.
+
+## Main Analysis Script
+
+You can download the complete code and Jupyter notebook for this project here:
+
+[![Download project (ZIP)](https://img.shields.io/badge/Download%20project-blue?style=for-the-badge&logo=github)](files/premier-league-analysis.zip)
+
+[![View on GitHub](https://img.shields.io/badge/View%20on%20GitHub-black?style=for-the-badge&logo=github)](https://github.com/jcwigon/premier-league-stats-2021-2025-analysis)
