@@ -51,3 +51,7 @@ The project is organized into several Python modules and scripts, each responsib
 - **.csv files** – Example input datasets.
 
 All modules are well documented, and the code follows a modular structure for clarity and easy maintenance.
+
+## Workflow
+
+![Project workflow](imgs/pl_workflow.png)
