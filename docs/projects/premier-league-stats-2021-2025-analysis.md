@@ -64,10 +64,50 @@ You can download the complete code and Jupyter notebook for this project here:
 
 ## Analysis Visualizations
 
-# Average goals per match (by season)
+### Average goals per match (by season)
 
 ![Average goals](imgs/pl1.png)
 
-# Fouls and Cards – Home vs Away Teams
+### Fouls and Cards – Home vs Away Teams
 
 ![Fouls](imgs/pl2.png)
+
+### Percentage breakdown, who won? - Away / Home / Draw
+
+![Wons](imgs/pl3.png)
+
+### Average number of shots per match - Home vs. Away
+
+![shots](imgs/pl4.png)
+
+### Shot Effectiveness (Accuracy) - Home vs. Away
+
+![shots ef](imgs/pl5.png)
+
+### Average Shots: Home vs. Away
+
+![shots av](imgs/pl6.png)
+
+### Shot Efficiency: Home vs. Away (On Target Percentage)
+
+![shots avont](imgs/pl7.png)
+
+### Number of goals scored by teams - 21/22 season
+
+![goals by t](imgs/pl8.png)
+
+### Number of goals scored by teams - 22/23 season
+
+![goals by t2](imgs/pl9.png)
+
+### Number of goals scored by teams - 23/24 season
+
+![goals by t3](imgs/pl10.png)
+
+### Number of goals scored by teams - 24/25 season
+
+![goals by t4](imgs/pl11.png)
+
+### Simplified xG for the top 10 teams across seasons
+
+![xg](imgs/pl12.png)
