@@ -62,3 +62,12 @@ You can download the complete code and Jupyter notebook for this project here:
 
 [![Download project (ZIP)](https://img.shields.io/badge/Download%20project-blue?style=for-the-badge&logo=github)](files/premier-league-analysis.zip)
 
+## Analysis Visualizations
+
+# Average goals per match (by season)
+
+![Average goals](imgs/pl1.png)
+
+# Fouls and Cards – Home vs Away Teams
+
+![Fouls](imgs/pl2.png)
