@@ -333,9 +333,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#workflow" class="md-nav__link">
+  <a href="#project-workflow" class="md-nav__link">
     <span class="md-ellipsis">
-      Workflow
+      Project Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-analysis-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main analysis script
     </span>
   </a>
   
@@ -434,9 +443,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#workflow" class="md-nav__link">
+  <a href="#project-workflow" class="md-nav__link">
     <span class="md-ellipsis">
-      Workflow
+      Project Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-analysis-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main analysis script
     </span>
   </a>
   
@@ -505,8 +523,104 @@
 <li><strong>.csv files</strong> – Example input datasets.</li>
 </ul>
 <p>All modules are well documented, and the code follows a modular structure for clarity and easy maintenance.</p>
-<h2 id="workflow">Workflow</h2>
+<h2 id="project-workflow">Project Workflow</h2>
 <p><img alt="Project workflow" src="../imgs/pl_workflow.png" /></p>
+<h2 id="main-analysis-script">Main analysis script</h2>
+<p>Here is the complete Python script used as the entry point for the project:</p>
+<p>```python</p>
+<h1 id="tutaj-wklej-kod-z-mainpy-lub-wyeksportowanego-notebooka">tutaj wklej kod z main.py lub wyeksportowanego notebooka</h1>
+<p>import os
+import numpy as np
+import pandas as pd
+from analiza import AnalyzerMultiSeason
+from statystyki import StatystykiSezonu
+from wizualizacje import (
+    wykres_srednia_goli,
+    wykres_faule_kartki,
+    wykres_udzial_wygranych,
+    wykres_srednia_strzalow,
+    wykres_celnosc,
+    wykres_celnosc_druzyn,
+    wykres_strzaly_druzyn,
+    wykres_gole_druzyn_na_sezon,
+    wykres_xg_top10
+)</p>
+<h1 id="wczytaj-dane-z-folderu">📂 Wczytaj dane z folderu</h1>
+<p>folder_path = "C:/Moje/Python proj"
+pliki_csv = [plik for plik in os.listdir(folder_path) if plik.endswith(".csv")]</p>
+<h1 id="wczytaj-dane-i-dodaj-kolumne-zwyciezca">🔄 Wczytaj dane i dodaj kolumnę 'Zwyciezca'</h1>
+<p>analyzer = AnalyzerMultiSeason(folder_path, pliki_csv)
+df_all = analyzer.wczytaj_wszystkie_dane()
+analyzer.dodaj_kolumne_zwyciezca()</p>
+<h1 id="obiekt-klasy-z-analizami">📊 Obiekt klasy z analizami</h1>
+<p>stat = StatystykiSezonu(df_all)</p>
+<h1 id="analizy-tekstowe">=== ANALIZY TEKSTOWE ===</h1>
+<p>print("➡️ Średnia liczba goli w sezonie:")
+print(stat.srednia_goli_per_sezon(), "\n")
+print("-" * 80)</p>
+<p>print("➡️ Średnia liczba fauli i kartek:")
+print(stat.analiza_faul_kartki(), "\n")
+print("-" * 80)</p>
+<p>print("➡️ Udział zwycięstw gospodarzy, remisów i gości:")
+print(stat.udzial_wygranych_home_away(), "\n")
+print("-" * 80)</p>
+<p>print("➡️ Średnia liczba strzałów:")
+print(stat.srednia_strzalow(), "\n")
+print("-" * 80)</p>
+<p>print("➡️ Skuteczność strzałów (gole/strzały):")
+print(stat.skutecznosc_strzalow(), "\n")
+print("-" * 80)</p>
+<p>print("➡️ Strzały i skuteczność drużyn:")
+print(stat.statystyki_strzalow_druzyn(), "\n")
+print("-" * 80)</p>
+<p>print("➡️ Liczba goli strzelonych przez drużyny w każdym sezonie:")
+print(stat.gole_druzyn_na_sezon(), "\n")
+print("-" * 80)</p>
+<p>print("➡️ Uproszczony wskaźnik xG na sezon:")
+print(stat.xg_per_season(), "\n")
+print("-" * 80)</p>
+<h1 id="wizualizacje">=== WIZUALIZACJE ===</h1>
+<h1 id="1-srednia-goli-na-sezon">1. Średnia goli na sezon</h1>
+<p>df_gole = stat.srednia_goli_per_sezon()
+wykres_srednia_goli(df_gole)
+print("\n" + "="*100 + "\n")</p>
+<h1 id="2-faule-i-kartki">2. Faule i kartki</h1>
+<p>df_faul_kartki = stat.analiza_faul_kartki()
+wykres_faule_kartki(df_faul_kartki)
+print("\n" + "="*100 + "\n")</p>
+<h1 id="3-udzia-zwyciestw">3. Udział zwycięstw</h1>
+<p>df_udzial = stat.udzial_wygranych_home_away()
+wykres_udzial_wygranych(df_udzial)
+print("\n" + "="*100 + "\n")</p>
+<h1 id="4-srednia-liczba-strzaow">4. Średnia liczba strzałów</h1>
+<p>df_srednia_strzalow = stat.srednia_strzalow()
+lista_strzalow = df_srednia_strzalow["Średnia"].astype(float).tolist()
+wykres_srednia_strzalow(lista_strzalow)
+print("\n" + "="*100 + "\n")</p>
+<h1 id="5-skutecznosc-strzaow">5. Skuteczność strzałów</h1>
+<p>seria_celnosc = stat.skutecznosc_strzalow()
+if isinstance(seria_celnosc, pd.Series):
+    lista_celnosc = seria_celnosc.astype(float).tolist()
+elif isinstance(seria_celnosc, pd.DataFrame) and "Celność [%]" in seria_celnosc.columns:
+    lista_celnosc = seria_celnosc["Celność [%]"].astype(float).tolist()
+else:
+    raise ValueError("Nieoczekiwany format danych dla skuteczności strzałów.")
+wykres_celnosc(lista_celnosc)
+print("\n" + "="*100 + "\n")</p>
+<h1 id="6-strzay-i-celnosc-druzyn">6. Strzały i celność drużyn</h1>
+<p>df_druzyny_strzaly = stat.statystyki_strzalow_druzyn()
+wykres_strzaly_druzyn(df_druzyny_strzaly)
+print("\n" + "="<em>100 + "\n")
+wykres_celnosc_druzyn(df_druzyny_strzaly)
+print("\n" + "="</em>100 + "\n")</p>
+<h1 id="7-gole-druzyn-na-sezon">7. Gole drużyn na sezon</h1>
+<p>df_gole_sezon = stat.gole_druzyn_na_sezon()
+wykres_gole_druzyn_na_sezon(df_gole_sezon)
+print("\n" + "="*100 + "\n")</p>
+<h1 id="8-xg">8. xG</h1>
+<p>df_xg_szeroko = stat.xg_per_season()
+wykres_xg_top10(df_xg_szeroko)
+print("\n" + "="*100 + "\n")</p>
 
 
 

@@ -174,4 +174,4 @@ print("\n" + "="*100 + "\n")
 df_xg_szeroko = stat.xg_per_season()
 wykres_xg_top10(df_xg_szeroko)
 print("\n" + "="*100 + "\n")
-
+```
