@@ -26,12 +26,28 @@ Additionally, as a football enthusiast, I have prepared interesting analyses tha
 
 ## Skills
 
-Python  
-Pandas  
-Matplotlib  
-MongoDB  
-MkDocs  
-Git  
-Visual Studio Code  
-Open Data  
+- **Python**  
+- **Pandas**  
+- **Matplotlib**  
+- **MongoDB**  
+- **MkDocs**  
+- **Git**  
+- **Visual Studio Code**  
+- **Open Data**  
 
+## Project structure
+
+The project is organized into several Python modules and scripts, each responsible for a specific part of the analysis workflow:
+
+- **main.py** – Entry point of the project; runs the full data analysis pipeline.
+- **analiza.py** – Functions for data exploration and cleaning.
+- **statystyki.py** – Computes match and season statistics.
+- **wizualizacje.py** – Generates plots and visual summaries.
+- **pobieranie.py** – Downloads data from open data sources.
+- **mongodb_analiza.py** – Analysis and querying of the MongoDB NoSQL database.
+- **mongo_utworz_baze.py** – Script for creating and populating the MongoDB database.
+- **requirements.txt** – List of required Python packages.
+- **README.md** – Project documentation and setup instructions.
+- **.csv files** – Example input datasets.
+
+All modules are well documented, and the code follows a modular structure for clarity and easy maintenance.
