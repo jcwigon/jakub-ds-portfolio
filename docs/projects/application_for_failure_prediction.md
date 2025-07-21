@@ -24,3 +24,7 @@ The main goal of the application is to support maintenance teams and production 
 
 - **Effectiveness Confirmed by Testing:**  
   In practical tests in a production environment, the application demonstrated high prediction accuracy—there were no cases of missed actual failures, and false alarms were acceptable from a preventive maintenance perspective.
+
+## Project Workflow
+
+![Project workflow](imgs/Pred_app.png)
