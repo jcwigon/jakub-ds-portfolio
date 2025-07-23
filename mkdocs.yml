@@ -9,3 +9,4 @@ nav:
       - "Premier League Statistics Analysis (2021–2025)": projects/premier-league-stats-2021-2025-analysis.md
       - "Aplication for Failure Prediction": projects/application_for_failure_prediction.md
       - "AI Defect Detection": projects/ai_camera_detection_on_production_line.md
+      - "PDF Insight Agent": projects/pdf_summarization_aiagent.md
