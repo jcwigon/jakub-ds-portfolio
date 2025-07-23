@@ -51,6 +51,16 @@ The project consists of several files and resources needed to run the PDF Insigh
 
 ## Example Images from Application in Use
 
+![APP](imgs/Ag1.png)
+
+![APP](imgs/Ag2.png)
+
+![APP](imgs/Ag3.png)
+
+![APP](imgs/Ag4.png)
+
+![APP](imgs/Ag5.png)
+
 ## Explore the app:
 
 [![View on GitHub](https://img.shields.io/badge/View%20on-GitHub-black?logo=github)](https://github.com/jcwigon/pdf_summarization_aiagent)
