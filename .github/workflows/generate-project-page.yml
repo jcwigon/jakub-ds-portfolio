@@ -1,4 +1,4 @@
-﻿name: Generate Project Page (PR-ready)
+name: Generate Project Page (PR-ready)
 
 on:
   workflow_dispatch:
