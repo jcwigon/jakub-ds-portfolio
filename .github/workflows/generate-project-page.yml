@@ -6,47 +6,36 @@
       title:
         description: "Project title (shown in nav and H1)"
         required: true
-        type: string
       date:
         description: "Creation date (YYYY-MM-DD)"
         required: true
-        type: string
       repo_url:
         description: "GitHub repo URL"
         required: true
-        type: string
       demo_url:
         description: "Demo URL (optional)"
         required: false
-        type: string
       skills:
         description: "Comma-separated skills (e.g., Python, Pandas, Streamlit)"
         required: true
-        type: string
       description:
         description: "Short project description (1-2 paragraphs)."
         required: true
-        type: string
       components:
         description: "Key components (comma or semicolon separated)"
         required: true
-        type: string
       structure:
         description: "Project structure items (semicolon separated)"
         required: true
-        type: string
       workflow_image:
         description: "Path under docs/ e.g. projects/imgs/Pred_app.png (optional)"
         required: false
-        type: string
       example_images:
         description: "Comma-separated image paths under docs/ (optional)"
         required: false
-        type: string
       slug:
         description: "Filename slug without .md (optional)"
         required: false
-        type: string
 
 permissions:
   contents: write
