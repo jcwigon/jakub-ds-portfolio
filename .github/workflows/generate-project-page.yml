@@ -1,9 +1,6 @@
 ﻿name: Generate Project Page (PR-ready)
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
     inputs:
       title:
@@ -84,4 +81,5 @@ jobs:
 
           echo "Created branch: $BRANCH"
           echo "Now open a PR from $BRANCH into main."
+
 
