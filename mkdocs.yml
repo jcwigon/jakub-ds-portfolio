@@ -10,3 +10,4 @@ nav:
       - "Aplication for Failure Prediction": projects/application_for_failure_prediction.md
       - "AI Defect Detection": projects/ai_camera_detection_on_production_line.md
       - "PDF Insight Agent": projects/pdf_summarization_aiagent.md
+      - "Pre-Assembly Side Detector": projects/pre_assembly_side_detector.md
