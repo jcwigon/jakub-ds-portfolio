@@ -1,12 +1,10 @@
-﻿name: Manual test
+name: Manual test
 
 on:
   workflow_dispatch:
 
 jobs:
-  test:
+  hello:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "hello"
-      - run: echo "bump-1"
-
+      - run: echo "If you see this, workflow_dispatch really works!"
