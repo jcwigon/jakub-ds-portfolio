@@ -11,7 +11,10 @@ The system provides fully automated quality inspection for visual defects such a
 **Key components of the project:**
 
 - **Cognex AI Cameras:**
-Modern industrial Cognex cameras with AI functions were used, enabling automatic detection of defects, surface inspection, and label verification without affecting production line throughput.
+Modern industrial Cognex 3800 cameras with AI functions were used, enabling automatic detection of defects, surface inspection, and label verification without affecting production line throughput.
+
+- **Cognex In-Sight Vision Suite (ViDi):**
+Cognex ViDi Suite is an advanced, AI-powered deep learning software designed specifically for factory automation. It enables efficient handling of complex and subjective inspection tasks such as defect detection, part localization, classification, and OCR. The system mimics human visual inspection capabilities and is particularly effective in conditions with high variability, inconsistent backgrounds, or non-standard defect patterns that are difficult to define using traditional rule-based vision systems.
 
 - **Cognex Illuminators:**
 Dedicated Cognex illuminators were implemented to ensure stable, uniform lighting conditions for all inspected surfaces. This significantly increases the effectiveness of detecting even the smallest visual defects and allows inspection of elements with varied structure and color.
@@ -21,6 +24,9 @@ Implementation required adapting production stations, including the installation
 
 - **PLC Integration:**
 The vision system was integrated with the existing PLC control and production systems, enabling real-time quality analysis and automatic product parameter control.
+
+- **Image Storage and Internal Server Integration:**
+The system includes functionality for automatic capturing, transmission, and storage of inspection images on the company’s internal servers. Images are linked to individual product serial numbers and archived for a defined retention period. This ensures fast access for audits, traceability requirements, and efficient complaint analysis.
 
 - **Traceability Development:**
 The solution allows for linking images to the specific serial number of each product. Photographic documentation is stored for a defined period, supporting efficient complaint resolution and compliance with industry requirements.
@@ -33,3 +39,17 @@ This project is an example of a modern approach to ensuring high production qual
 ## Project Workflow
 
 ![Project workflow](imgs/AIcam.png)
+
+## Sample Photos
+
+![APP](imgs/k1.png)
+
+![APP](imgs/k2.png)
+
+![APP](imgs/k3.png)
+
+![APP](imgs/k4.png)
+
+![APP](imgs/k5.png)
+
+![APP](imgs/k6.png)
