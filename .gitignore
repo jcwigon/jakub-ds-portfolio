@@ -9,3 +9,4 @@ __pycache__/
 # OS / editors
 .DS_Store
 .vscode/
+site/
