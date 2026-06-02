@@ -40,7 +40,7 @@ This project is an example of a modern approach to ensuring high production qual
 
 ![Project workflow](imgs/AIcam.png)
 
-## Sample Photos
+## Sample Photos:
 
 ![APP](imgs/k1.png)
 
