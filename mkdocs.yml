@@ -12,3 +12,4 @@ nav:
       - "PDF Insight Agent": projects/pdf_summarization_aiagent.md
       - "Pre-Assembly Side Detector": projects/pre_assembly_side_detector.md
       - "Automated Image Monitoring System": projects/photo_check_automation.md
+      - "": projects/project.md
